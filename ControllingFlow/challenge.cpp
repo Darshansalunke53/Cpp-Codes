@@ -14,7 +14,8 @@ int main()
     {
         cout << "\n";
         cout << "P - Print numbers" << endl;
-        cout << "A - Add a number" << endl;
+        cout << "A - Add a number(with duplicate)" << endl;
+        cout << "R - Add a number(without duplicate)" << endl;
         cout << "M - Display mean of the numbers" << endl;
         cout << "S - Display the smallest number" << endl;
         cout << "L - Display the largest number" << endl;
@@ -53,6 +54,36 @@ int main()
 
                 list.push_back(num);
                 cout << num << " added " << endl;
+            }
+        }
+        else if (choice == 'R' || choice == 'r')
+        {
+            int num{0};
+            if (list.size() == 0)
+            {
+                cout<<"Enter first number: ";
+                cin>>num;
+                list.push_back(num);
+            }
+            else
+            {
+                cout<<"Enter a number: ";
+                cin>>num;
+
+                for(auto val : list)
+                {
+                    if (val != num)
+                    {
+                        list.push_back(num);
+                        cout<<num<<" is added "<<endl;
+                    }
+                    else
+                    {
+                        cout<<"Enter number is alrady present,Try again!"<<endl;
+                        break;
+                    }
+            
+                }
             }
         }
         else if (choice == 'M' || choice == 'm')
