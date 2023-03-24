@@ -20,7 +20,7 @@ int main()
 
         for(int k=1;k<=i;k++)
         {
-            cout<<"*";
+            cout<<"* ";
         }
 
         int start=i-1;
@@ -41,7 +41,7 @@ int main()
 
         for(int k=1;k<=(n-i+1);k++)
         {
-            cout<<"*";
+            cout<<"* ";
         }
 
         int start=n-i;

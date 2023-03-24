@@ -15,19 +15,19 @@ int main()
     {
         for(int j=1;j<=i;j++)
         {
-            cout<<j;
+            cout<<j<<" ";
         }
 
         int space=n-i;
         while(space)
         {
-            cout<<"  ";
+            cout<<"    ";
             space--;
         }
          int val=i;
         for(int k=1;k<=i;k++)
         {
-            cout<<val;
+            cout<<val<<" ";
             val--;
         }
 

@@ -19,6 +19,7 @@ int main()
             cout<<ch<<" ";
             ch++;
         }
+        
         cout<<endl;
     }
     return 0;
