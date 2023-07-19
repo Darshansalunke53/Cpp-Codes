@@ -7,7 +7,7 @@ int main()
 
 {
     int num;
-    cout<<"Enter a number: ";
+    cout<<"Enter a number: "; 
     cin>>num;
     
     //Using for loop
